@@ -22,8 +22,9 @@
 3.生命周期绑定不友好……
 
 
-###用法
-```XObservable.create(new XObservable.ObservableOnSubscribe<Integer>() {
+### 用法
+```
+          XObservable.create(new XObservable.ObservableOnSubscribe<Integer>() {
                 @Override
                 public void subscribe(Emitter<Integer> emitter) {
                 // todo 子线程执行异步任务，结果通过onNext返回给主线程，可执行多次onNext；
